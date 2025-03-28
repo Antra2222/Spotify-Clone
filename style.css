@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(/bg/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg{
+    height: 20rem;
+    background-color: rgb(221, 175, 138);
+    z-index: 2;
+    opacity: .7;
+    
+}
+
+.bg p{
+    font-family: "Roboto", serif;
+    font-size: 7rem;
+    font-weight: 2500;
+    color: rgb(252, 247, 247);
+    display: flex;
+    justify-content: end;
+}
+
+.bg div{
+    font-family: "Roboto", serif; 
+    color: rgb(250, 246, 246);
+    position: relative;
+    bottom: -9rem;
+    font-weight: 2500;
+    left: 4rem;
+}
+
+.spotify{
+    height: 3rem;
+    position: absolute;
+    top: 16rem;
+}
+
+.follow{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: absolute;
+    top: 17rem;
+    left: 18rem;
+    font-family: "Roboto", serif;
+    color: black;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.play{
+    height: 2rem;
+}
+
+.pause{
+    height: 2rem;
+    position: absolute;
+    left: 29.3rem;
+    visibility: hidden;
+}
+
+.musicContainer{
+    position: absolute;
+    left: 25rem;
+    top: 23rem;
+
+}
+
+li{
+    background-color: antiquewhite;
+    margin: 5px;
+    padding: 0 1rem;
+    width: 30rem;
+    opacity: .7;
+    border-radius: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#seekbar{
+    width: 70rem;
+    height: .5rem;
+    margin: 3rem 0;
+    border-radius: 7px;
+    border: 2px solid black;
+    position: absolute;
+    top: 85vh;
+    left: 25vw
+}
+
+#songLength {
+    position: absolute;
+    top: 89.3vh;
+    right: 13.5vw;
+    font-family: "Roboto", serif;
+}
+
+#currentSongTime{
+    width: 5rem;
+    position: absolute;
+    top: 89.5vh;
+    left: 22.5vw;
+    font-family: "Roboto", serif;
+}
